@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <title>My book Club</title>
+    <style>
+.login_buttons {
+  position:absolute;
+  right: 0px;
+  width: 150px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+</style>
+<body>
+    <div class="login_buttons">
+        <header>
+            <button type="button"><a href="{% url 'login' %}">Login</a></button>
+            <button type="button"><a href="{% url 'signup' %}">Signup</a></button>
+        </header>
+    </div>
+  
+  <h1>Hello there!</h1>
+  <h2>Welcome to the CubexO Book Club</h2>
+  <h4>Please log in to start</h4>
+  <h6>If you dont have an account yet, register with your email</h6>
+
+</body>
+</html>

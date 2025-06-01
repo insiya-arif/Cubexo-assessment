@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <title> login page</title>
+    <!-- <style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #21a1f0;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #13588a;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    color: #13588a;
+}
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+} -->
+</style>
+</head>
+<body>
+  
+  <h2>Login</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Login</button>
+</form>
+
+    <!-- <div>
+    
+    <form action="/action_page.php">
+    <label for="email">User Email:</label><br>
+    <input type="text" id="email" name="email" value="Enter your email"><br>
+    <label for="password">User Password:</label><br>
+    <input type="text" id="password" name="password" value="Password"><br><br>
+    <input type="submit" value="Login">
+    </form> 
+
+    </div> --> 
+</body>
+
+</html>
