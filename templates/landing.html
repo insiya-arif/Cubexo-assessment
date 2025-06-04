@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+   <html>
+   <head>
+       <title>Library - Welcome</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   <body>
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <div class="container-fluid">
+               <a class="navbar-brand" href="{% url 'landing' %}">Library</a>
+               <div class="navbar-nav ms-auto">
+                   <a class="nav-link btn btn-outline-primary me-2" href="{% url 'login' %}">Login</a>
+                   <a class="nav-link btn btn-outline-primary me-2" href="{% url 'signup' %}">Sign Up</a>
+               </div>
+           </div>
+       </nav>
+       <div class="container mt-5">
+           <div class="text-center">
+               <h1>Welcome to the CubexO Library</h1>
+               <p class="lead">Discover a world of books and manage your reading list with ease.</p>
+               <a href="{% url 'signup' %}" class="btn btn-primary btn-lg">Get Started</a>
+           </div>
+       </div>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
+   </html>
